@@ -56,7 +56,7 @@ Les conditions aux limites classiques sont les conditions de Dirichlet (qui impo
 
 Dirichlet : $$u(x,y) = g(x,y) \quad  \forall (x,y) \in \partial \Omega_D$$ 
 
-Neumann : $$\bar{\nabla} u(x,y) \cdot \bar{n}(x,y)= h(x,y) \quad  \forall (x,y) \in \partial \Omega_N$$ 
+Neumann : $$k(x,y) \bar{\nabla} u(x,y) \cdot \bar{n}(x,y)= h(x,y) \quad  \forall (x,y) \in \partial \Omega_N$$ 
 
 Pour un problème de diffusion de la chaleur, les conditions de Dirichlet consistent à imposer la valeur de la température sur un bord (via un thermostat par exemple) et les conditions de Neumann consistent à imposer un flux de chaleur sur le bord.
 
