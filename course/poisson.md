@@ -7,7 +7,7 @@ milieu homogène 2D, elle s'écrit
 $$-k \Delta u(x,y) = f(x,y) .$$
 
 Si le terme source $f$ est nul, il s'agit de l'équation de Laplace :
-$$\Delta u = 0 .$$
+$$\Delta u(x,y) = 0 .$$
 
 Si le milieu est hétérogène avec un coefficient de diffusion $k$ variable dans
 l'espace, on a alors 
