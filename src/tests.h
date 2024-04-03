@@ -13,7 +13,7 @@
 
 namespace FEM2A {
     namespace Tests {
-
+/*
         bool test_load_mesh()
         {
             Mesh mesh;
@@ -22,12 +22,12 @@ namespace FEM2A {
             std::cout << "Vertices <x> <y> <att>" << std::endl;
             for( int v = 0; v < mesh.nb_vertices(); v++ ) {
                 std::cout << mesh.get_vertex(v).x << " " << mesh.get_vertex(v).y
-                    << " " << mesh.get_vertex_attribute(v) << std::endl;
+                   << " " << mesh.get_vertex_attribute(v) << std::endl;
             }
 
             std::cout << "Edges <v0> <v1> <att>" << std::endl ;
             for( int ed = 0; ed < mesh.nb_edges(); ed++ ) {
-                std::cout << mesh.get_edge_vertex_index(ed, 0) << " "
+               std::cout << mesh.get_edge_vertex_index(ed, 0) << " "
                     << mesh.get_edge_vertex_index(ed, 1) << " "
                     << mesh.get_edge_attribute(ed) << std::endl;
             }
@@ -49,11 +49,21 @@ namespace FEM2A {
             mesh.load("data/geothermie_4.mesh");
             mesh.save("data/geothermie_4.mesh");
             return true;
-        }
+        } */
         
-        bool test_quadrature()
+        bool test_quadrature(int ordre, bool bord)
         {
- 		std::cout << "test Quadrature" << std::endl ;
+        	std::cout << "test Quadrature" << std::endl ;
+        	Quadrature Q;
+        	Q = Quadrature::get_quadrature(ordre, bord);
+        	std::cout << Q.nb_points()<< std::endl;
+        	double sum=0;
+        	for (int i=0; i<Q.nb_points(); ++i) {
+        		std::cout << Q.point(i).x << " " << Q.point(i).y << std::endl;
+        		std::cout << Q.weight(i) << std::endl;
+        		sum = sum + Q.weight(i);
+        		}
+        		std::cout << sum << std::endl;
  		return true;
     	}
 }

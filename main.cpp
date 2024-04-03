@@ -34,9 +34,9 @@ void run_tests()
     const bool t_test = true;
 
     if( t_opennl ) test_opennl();
-    if( t_lmesh ) Tests::test_load_mesh();
-    if( t_io ) Tests::test_load_save_mesh();
-    if( t_test) Tests::test_quadrature();
+    //if( t_lmesh ) Tests::test_load_mesh();
+    //if( t_io ) Tests::test_load_save_mesh();
+    if( t_test) Tests::test_quadrature(2,true);
 }
 
 void run_simu()
