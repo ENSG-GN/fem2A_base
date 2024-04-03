@@ -39,7 +39,7 @@ namespace FEM2A {
                     << mesh.get_triangle_vertex_index(tr, 2) << " "
                     << mesh.get_triangle_attribute(tr) << std::endl;
             }
-
+            
             return true;
         }
 
@@ -50,6 +50,11 @@ namespace FEM2A {
             mesh.save("data/geothermie_4.mesh");
             return true;
         }
-
-    }
+        
+        bool test_quadrature()
+        {
+ 		std::cout << "test Quadrature" << std::endl ;
+ 		return true;
+    	}
+}
 }
