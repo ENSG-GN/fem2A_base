@@ -102,7 +102,7 @@ cd C:\fem2a_base
 ```
 -->
 
-Pour visualiser un maillage (ex: square.mesh), utilisez le logiciel
+Pour visualiser un maillage (ex : square.mesh), utilisez le logiciel
 [Medit](https://www.ljll.math.upmc.fr/frey/software.html) :
 ```
 medit-win.exe square.mesh
@@ -120,6 +120,39 @@ le dossier de travail. L'exécutable **fem2a** sera alors généré dans le doss
 
 Pour exécuter le programme, tapez **./build/fem2a -option** en ligne de
 commande.
+
+### Visualisation des maillages et des résultats de simulation
+
+Pour visualiser un maillage (ex : square.mesh), nous utiliserons le logiciel Medit:
+
+#### Sous Windows
+
+Télécharger l'exécutable medit-win.exe et la bibliothèque glut32.dll au bas de [cette page](https://www.ljll.math.upmc.fr/frey/software.html) puis exécuter
+```
+medit-win.exe square.mesh
+
+```
+Si un fichier solution (extension .bb) avec le même nom se trouve dans le même
+dossier que le maillage visualisé, alors on peut afficher la solution en
+appuyant sur la touche **m** dans Medit.
+
+#### Sous Linux
+
+Cloner le [repo GitHub de Medit](https://github.com/ISCDtoolbox/Medit). Suivre le README pour l'installation. Sans doute vous faudra-t-il aussi installer la bibliothèque glut :
+```
+sudo apt-get install freeglut3 freeglut3-dev
+sudo apt-get install binutils-gold
+```
+Si la compilation ne fonctionne toujours pas, changer votre CMakeList.txt comme indiqué [ici](https://github.com/ISCDtoolbox/Medit/issues/5)
+
+Exécution :
+```
+./medit square.mesh
+
+```
+Si un fichier solution (extension .bb) avec le même nom se trouve dans le même
+dossier que le maillage visualisé, alors on peut afficher la solution en
+appuyant sur la touche **m** dans Medit.
 
 ### Conseils
 
