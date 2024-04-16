@@ -35,7 +35,7 @@ comprendre et utiliser ce qu'ils contiennent.
 
 Contiennent une méthode *solve* qui permet de résoudre des systèmes linéaires
 en appelant la librairie
-[OpenNL](http://alice.loria.fr/index.php/software/4-library/23-opennl.html).
+[OpenNL](https://github.com/BrunoLevy/geogram/wiki/OpenNL).
 Contiennent également les classes DenseMatrix et SparseMatrix que le code vous
 invite à utiliser.
 
@@ -61,7 +61,7 @@ générale.
 - third_party/ :
 
 Contient la librairie
-[OpenNL](http://alice.loria.fr/index.php/software/4-library/23-opennl.html)
+[OpenNL](https://github.com/BrunoLevy/geogram/wiki/OpenNL)
 qui permet de résoudre le système linéaire. Vous n'avez pas à y toucher.
 
 - FEM2A.cbp :
@@ -102,16 +102,6 @@ cd C:\fem2a_base
 ```
 -->
 
-Pour visualiser un maillage (ex : square.mesh), utilisez le logiciel
-[Medit](https://www.ljll.math.upmc.fr/frey/software.html) :
-```
-medit-win.exe square.mesh
-
-```
-Si un fichier solution (extension .bb) avec le même nom se trouve dans le même
-dossier que le maillage visualisé, alors on peut afficher la solution en
-appuyant sur la touche **m** dans Medit.
-
 #### Sous Linux
 
 Pour compiler le programme, tapez simplement **make** en ligne de commande dans
@@ -123,14 +113,13 @@ commande.
 
 ### Visualisation des maillages et des résultats de simulation
 
-Pour visualiser un maillage (ex : square.mesh), nous utiliserons le logiciel Medit:
+Pour visualiser un maillage (ex : square.mesh), nous utiliserons le logiciel [Medit](https://www.ljll.fr/frey/logiciels/Docmedit.dir/index.html).
 
 #### Sous Windows
 
-Télécharger l'exécutable medit-win.exe et la bibliothèque glut32.dll au bas de [cette page](https://www.ljll.math.upmc.fr/frey/software.html) puis exécuter
+Télécharger l'exécutable medit-win.exe et la bibliothèque glut32.dll au bas de [cette page](https://www.ljll.math.upmc.fr/frey/software.html), puis exécuter
 ```
 medit-win.exe square.mesh
-
 ```
 Si un fichier solution (extension .bb) avec le même nom se trouve dans le même
 dossier que le maillage visualisé, alors on peut afficher la solution en
@@ -143,12 +132,11 @@ Cloner le [repo GitHub de Medit](https://github.com/ISCDtoolbox/Medit). Suivre l
 sudo apt-get install freeglut3 freeglut3-dev
 sudo apt-get install binutils-gold
 ```
-Si la compilation ne fonctionne toujours pas, changer votre CMakeList.txt comme indiqué [ici](https://github.com/ISCDtoolbox/Medit/issues/5)
+Si la compilation ne fonctionne toujours pas, changer votre CMakeLists.txt comme indiqué [ici](https://github.com/ISCDtoolbox/Medit/issues/5).
 
 Exécution :
 ```
 ./medit square.mesh
-
 ```
 Si un fichier solution (extension .bb) avec le même nom se trouve dans le même
 dossier que le maillage visualisé, alors on peut afficher la solution en
@@ -175,6 +163,5 @@ d'autres, etc) mais ce n'est pas recommandé. Il est par ailleurs conseiller d'�
 - Effectuer une simulation qui résout le problème de Neumann
 - Effectuer des simulations sur des géométries plus complexes (mug et geothermie)
 - Implémenter la fonction solve_poisson_problem()
-
 ```
 
