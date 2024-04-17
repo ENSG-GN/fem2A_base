@@ -1,27 +1,13 @@
 # Travail à rendre
 
-Individuellement, vous rendrez **sur ARCHE avant le 15 mai à minuit** :
+Individuellement, vous rendrez **avant le 15 mai à minuit** :
 
-- le code (src/, third_party/, main.cpp, FEM2A.cbp et Makefile) complété par
-vos soins. Référez-vous aux conseils donnés dans [Code FEM2A](code.md) pour
-davantage de détails sur les implémentations demandées et la progression à
-suivre.
+- Sur GitHub : le code fem2A_votrenom, avec les maillages (.mesh) et vos resultats de simulation (.bb) que vous placerez dans le dossier data/output/.
 
-- le dossier data contenant les maillages ainsi que le résultat de vos
-simulations (.mesh et .bb) que vous placerez dans output/.
-
-- un fichier au format pdf détaillant les tests et les simulations que vous
+- Sur ARCHE : un fichier au format pdf détaillant les tests et les simulations que vous
 avez mis en oeuvre. Vous prendrez soin d'analyser et de commenter vos résultats
 (valeurs obtenues, cohérence avec la physique, qualité de la solution calculée,
 etc).
-
-- Un petit fichier README.txt (de 20 à 30 lignes) expliquant comment compiler
-votre code et lancer l'exécutable, et détaillant toutes les options possibles
-pour permettre de reproduire vos tests et vos simulations.
-
-Vous mettrez tous ces éléments **dans un seul et unique dossier que vous nommerez
-*fem2a_nom*** et que vous compresserez en .zip avant de le déposer sur
-ARCHE.
 
 # Évaluation
 
