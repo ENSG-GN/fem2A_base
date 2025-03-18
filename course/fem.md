@@ -50,11 +50,11 @@ Utilité :
 Rappelons le problème à résoudre :
 
 $$     
-\left\{\begin{split}                                                                                                 
-     -\Delta u &= f \text{ dans } \Omega\\                                                                           
-     u &= g \text{ sur } \partial \Omega_D\\
-     \nabla u \cdot n &=h \text{ sur } \partial \Omega_N
- \end{split}\right.
+\begin{split}                                                                                                 
+     -\Delta u = f \ \ \text{ dans } \Omega,\\                                                                           
+     u = g \ \ \text{ sur } \partial \Omega_D,\\
+     \nabla u \cdot n =h \ \ \text{ sur } \partial \Omega_N.
+ \end{split}
 $$ 
 
 avec $n$ la normale extérieure au bord du domaine $\Omega$, $u$ la
