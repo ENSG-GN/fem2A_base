@@ -56,7 +56,7 @@ différentes quadratures.
   0.525 0
 
 - Matrice jacobienne au point xi=0.2 :
-   0.0125
+   0.125
    0
   déterminant = 0.125
 
