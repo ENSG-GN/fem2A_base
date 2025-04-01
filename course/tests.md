@@ -20,7 +20,7 @@ différentes quadratures.
   v1 : 0.639235 0.846329
   v2 : 0.734711 0.900627
 
-- Mapping du point (xi=0.2 , eta=0.4)  :
+- Mapping du point (xi=0.2 , eta=0.4) :
   0.671731 0.929517
 
 - Matrice jacobienne au point (xi=0.2 , eta=0.4) :
@@ -51,6 +51,14 @@ différentes quadratures.
 - Coordonnées des sommets :
   v0 : 0.5    0
   v1 : 0.625  0
+
+- Mapping du point xi=0.2 :
+  0.525 0
+
+- Matrice jacobienne au point xi=0.2 :
+   0.0125
+   0
+  déterminant = 0.125
 
 - Fe (pour h = 1) :
   0.0625
