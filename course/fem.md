@@ -222,11 +222,9 @@ $$
 \int_{\Omega_e} f(x,y)dxdy = \sum_{q=0}^{p-1}f(x_q)w_q
 $$
 
-où $p$ est le nombre de points de Gauss. Pour l'intégration de polynômes (ce
-qui va être notre cas), on peut montrer que $p$ points de Gauss sont
-nécessaires pour intégrer exactement des polynômes de degrés $2p-1$.
+où $p$ est le nombre de points de Gauss.
 
-**Intégration dans le triangle de référence :** La position et le poids de chaque point de Gauss dans le triangle de référence sont donnés ci-dessous.
+**Intégration dans le triangle de référence :** Nous aurons à notre disposition 4 lois d'intégration (ou quadratures) dans le triangle de référence : une d'ordre 0 ($p=1$), une d'ordre 2 ($p=3$), une d'ordre 4 ($p=6$) et une d'ordre 6 ($p=12$). Une loi d'intégration d'ordre $o$ intègre tout polynôme de degré $o$ de manière exacte. La position et le poids des deux premières lois sont représentés ci-dessous.
 
 <center><img src="images/gauss.svg" alt="Gauss" width="95%"></center>
 
